@@ -5,14 +5,61 @@ Console.WriteLine("--------------------------------------------");
 Console.WriteLine();
 MooseSays("Hi!");
 
-bool isTrue = MooseAsks("Is Canada real?");
-if (isTrue)
+// Ask some questions
+CanadaQuestion();
+EnthusiasticQuestion();
+LoveCSharpQuestion();
+SecretQuestion();
+
+void CanadaQuestion()
 {
-    MooseSays("Really? It seems very unlikely.");
+    bool isTrue = MooseAsks("Is Canada real?");
+    if (isTrue)
+    {
+        MooseSays("Really? It seems very unlikely.");
+    }
+    else
+    {
+        MooseSays("I KNEW IT !!!");
+    }
 }
-else
+void EnthusiasticQuestion()
 {
-    MooseSays("I KNEW IT !!!");
+    bool isEnthusiastic = MooseAsks("Are you enthusiastic?");
+    if (isEnthusiastic)
+    {
+        MooseSays("Yay!");
+    }
+    else
+    {
+        MooseSays("You should try it!");
+    }
+}
+
+void LoveCSharpQuestion()
+{
+    bool doesLoveCSharp = MooseAsks("Do you love C# yet?");
+    if (doesLoveCSharp)
+    {
+        MooseSays("Good job sucking up to your instructor!");
+    }
+    else
+    {
+        MooseSays("You will...oh, yes, you will...");
+    }
+}
+
+void SecretQuestion()
+{
+    bool wantsSecret = MooseAsks("Do you want to know a secret?");
+    if (wantsSecret)
+    {
+        MooseSays("ME TOO!!!! I love secrets...tell me one!");
+    }
+    else
+    {
+        MooseSays("Oh, no...secrets are the best, I love to share them!");
+    }
 }
 
 
